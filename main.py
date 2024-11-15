@@ -6,7 +6,7 @@ import matplotlib.pylab as plt
 from flask import Flask, request, jsonify
 from tempfile import TemporaryFile, NamedTemporaryFile
 
-ALLOWED_EXTENSIONS = {'jpg','jpeg','png'}
+ALLOWED_EXTENSIONS = {'jpeg','png'}
 
 def allowed_file(filename):
     return '.' in filename and \
